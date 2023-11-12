@@ -317,7 +317,7 @@ header {
   margin: 0px;
 }
 
-/* Мобильная версия */
+/* Мобильная версия 768px*/
 @media screen and (max-width: 768px){
 
 
@@ -362,6 +362,99 @@ header {
     flex-direction: column;
   }
 
+  /* Большие кроссы Мобилка */
+
+  .sneaker_big_image {
+    width: 100%;
+    max-width: 295px;
+    height: 173px;
+    }
+  
+  .snekers_page_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 375px;
+    padding: 0px 16px;
+  }
+  .snekers_page_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .big_text {
+    font-size: 16px;
+    max-width:295px;
+  }
+  .additional_info {
+    flex-direction: column;
+  }
+  .parametrs_header {
+    font-size: 24px;
+  }
+  .parametrs_row {
+    font-size: 16px;
+  }
+  h1,h2 {
+    margin: 0px;
+    font-weight: normal;
+  }
+
+  .big_info h2 {
+    font-size: 20px;
+  }
+  .subtitle {
+  font-weight: bold;
+}
+}
+
+@media screen and (max-width: 1139px) and (min-width:769px){
+
+
+  .container {
+    max-width: 752px;
+    margin: 0px auto 25px;
+  }
+
+  .header_container {
+    max-width: 752px;
+    flex-direction: row;   
+    
+  }
+  .footer_top_container {
+      flex-direction: row;
+    }
+
+  .footer_container {
+    max-width: 752px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+  nav ul{
+    padding: 0px;
+  }
+
+/* Кроссы в мобилке */
+  .sneaker_image {
+    width: 100%;
+    max-width: 343px;
+  }
+
+  .sneaker__title {
+    font-size: 26px;
+  }
+
+  .sneaker__text {
+  font-size: 20px;
+  }
+  
+ 
   /* Большие кроссы Мобилка */
 
   .sneaker_big_image {
