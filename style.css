@@ -438,22 +438,7 @@ header {
   }
   nav ul{
     padding: 0px;
-  }
-
-/* Кроссы в мобилке */
-  .sneaker_image {
-    width: 100%;
-    max-width: 343px;
-  }
-
-  .sneaker__title {
-    font-size: 26px;
-  }
-
-  .sneaker__text {
-  font-size: 20px;
-  }
-  
+  } 
  
   /* Большие кроссы Мобилка */
 
