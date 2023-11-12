@@ -318,7 +318,7 @@ header {
 }
 
 /* Мобильная версия */
-@media screen and (max-width: 540px){
+@media screen and (max-width: 650px){
 
 
   .container {
@@ -328,7 +328,7 @@ header {
 
   .header_container {
     width: 100%;
-    max-width: 375px;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -407,4 +407,7 @@ header {
   .big_info h2 {
     font-size: 20px;
   }
+  .subtitle {
+  font-weight: bold;
+}
 }
