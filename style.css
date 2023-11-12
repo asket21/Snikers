@@ -44,7 +44,7 @@ main {
 }
 
 .container {
-  max-width: 1161px;
+  max-width: 1140px;
   margin: 0px auto 25px;
 }
 
@@ -73,10 +73,12 @@ header {
   display: flex;
   column-gap: 24px;
   align-items: center;
+  
 }
 
 .nav_list {
   display: inline;
+  font-weight: bold;
 }
 
 .nav_header a {
@@ -151,6 +153,7 @@ header {
 
 
 /* Карточка кросса */
+
 .sneaker_info {
   display: flex;
   flex-direction: column;
@@ -177,23 +180,231 @@ header {
   flex-wrap: wrap;
   gap: 24px;
   align-items: flex-start;
+  justify-content: center;
 }
 
 
 .sneaker {
   width: 100%;
-  max-width: 371px;
+  max-width: 364px;
   background-color: #FFF;
   border-radius: 12px;
 
 }
 
+.container a:hover {
+  transform: translate(0px,-10px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.sneaker_big_image {
+  height: 600px;
+  }
+
 .sneaker_image {
   border-radius: 12px;
+  max-width: 364px
 }
 .subtitle {
   font-size: 48px;
   padding: 0px;
   margin: 0;
   padding: 32px 0px;
+}
+
+
+/* Страницы с кроссовками */
+
+
+.snekers_page_body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Anonymous Pro", serif;
+  color: #121723;
+  background-color: #F1F1F1;
+  margin: 0px;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.snekers_page_main {
+  background-color: #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.snekers_page_content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 48px;
+  gap: 32px;
+  border-radius: 12px;
+}
+
+
+.big_info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.big_text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 506px;
+  width: 100%;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  
+}
+
+.additional_info {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.parametrs_snikers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 506px;
+  gap: 24px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.parametrs_row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 506px;
+  align-items: center;
+  gap: 24px;
+}
+
+.parametrs_header {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.snekers_page_content hr {
+  color: #121723;
+  max-width: 506px;
+  height: 1px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Мобильная версия */
+@media screen and (max-width: 375px){
+
+
+  .container {
+    max-width: 343px;
+    margin: 0px auto 25px;
+  }
+
+  .header_container {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 0;
+    align-items: center;
+    
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+  nav ul{
+    padding: 0px;
+  }
+
+/* Кроссы в мобилке */
+  .sneaker_image {
+    width: 100%;
+    max-width: 343px;
+  }
+
+  .sneaker__title {
+    font-size: 26px;
+  }
+
+  .sneaker__text {
+  font-size: 20px;
+  }
+  
+  .footer_top_container {
+    flex-direction: column;
+  }
+
+  /* Большие кроссы Мобилка */
+
+  .sneaker_big_image {
+    width: 100%;
+    max-width: 295px;
+    height: 173px;
+    }
+  
+  .snekers_page_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 375px;
+    padding: 0px 16px;
+  }
+  .snekers_page_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .big_text {
+    font-size: 16px;
+    max-width:295px;
+  }
+  .additional_info {
+    flex-direction: column;
+  }
+  .parametrs_header {
+    font-size: 24px;
+  }
+  .parametrs_row {
+    font-size: 16px;
+  }
+  h1,h2 {
+    margin: 0px;
+    font-weight: normal;
+  }
+
+  .big_info h2 {
+    font-size: 20px;
+  }
 }
